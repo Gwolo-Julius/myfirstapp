@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(244, 244, 244);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 320px;
+  }
+}
